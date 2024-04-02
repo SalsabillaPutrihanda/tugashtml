@@ -26,15 +26,16 @@
 }
 
 body {
-    font-family: "Lora", sans-serif;
+    font-family: 'Lora', serif;
 }
-h1,h2,h3,h4,h5,h6, strong {
+
+h1, h2, h3, h4, h5, h6, strong {
     color: var(--primaryTextColor);
 }
 
 p {
-    font-size: 1rem; /* 16px */
-    line-height: 1,9rem;
+    font-size: 1rem;
+    line-height: 1.9rem;
 } 
 
 p, span, label, input, textarea, li {
@@ -50,7 +51,7 @@ a {
     margin: 0 auto;
 }
 
-@media screen and (max-widht: 1200px) {
+@media screen and (max-width: 1200px) {
     .main-container {
         width: 90%;
     }
@@ -58,13 +59,13 @@ a {
 
 /* Buttons */
 .btn {
-    padding: 1rem 1,5rem;
+    padding: 1rem 1.5rem;
     background: rgb(4, 82, 249);
-    border: 2px solid var (--borderColor);
-    cursor : pointer;
-    transition: .2s ease-in-out;
-        font-size: 50px; /* Ukuran font 24px */
-    }
+    border: 2px solid var(--borderColor);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    font-size: 24px;
+}
 
 .btn:hover {
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
@@ -73,13 +74,13 @@ a {
 /* Titles */
 .pre-title {
     text-transform: uppercase;
-    letter-spacing: 0,5rem;
+    letter-spacing: 0.5rem;
     color: var(--secondaryTextColor);
     position: relative;
     padding-left: 40px;
     width: fit-content;
     font-weight: 400;
-    font-size: 0,5rem;
+    font-size: 0.5rem;
 }
 
 .pre-title::before {
@@ -94,12 +95,11 @@ a {
 }
 
 /* Logo and Navigation Menu */
-.nav{
+.nav {
     display: flex;
     justify-content: space-between;
     padding: 2rem 0;
-    }
-
+}
 
 .nav ul {
     list-style: none;
@@ -124,8 +124,8 @@ nav ul li {
     align-items: center;
 }
 
-nav ul li a{
-    color: var(--primaryTextColor)
+nav ul li a {
+    color: var(--primaryTextColor);
 }
 
 /* Burger */
@@ -134,7 +134,7 @@ nav ul li a{
     height: 2px;
     background-color: #000;
     margin: 7px;
-    transition: all .3s;
+    transition: all 0.3s;
     z-index: 99;
 }
 
@@ -144,28 +144,28 @@ nav ul li a{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    }  
-    .image-container img {
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan dengan properti box-shadow */
-    }
-  
-  .hero-name {
-      font-size: 3rem;
-      font-weight: 600;
-      margin: 0.5rem 0 1rem;
-  }
-  
-  .hero-right img{
-      width: 80%;
-  }
-  
-  .hero-right {
-      display: flex;
-      justify-content: center;
-  }
+}  
 
-  /* Gallery Section */
+.image-container img {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.hero-name {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0.5rem 0 1rem;
+}
+  
+.hero-right img {
+    width: 80%;
+}
+  
+.hero-right {
+    display: flex;
+    justify-content: center;
+}
 
+/* Gallery Section */
 .Gallery .pre-title {
     margin: 0 auto;
 }
@@ -175,14 +175,10 @@ nav ul li a{
 }
 
 .Gallery img {
-    display: block; /* Atau inline-block, tergantung kebutuhan Anda */
+    display: block;
     margin: 50px auto;
     width: 500px;
     padding: 20px;
-    text-align: center;
-}
-
-p {
     text-align: center;
 }
 
