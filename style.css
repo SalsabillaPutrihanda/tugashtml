@@ -94,6 +94,15 @@ a {
     top: 50%;
 }
 
+.caption {
+    display: none; /* Semua teks caption disembunyikan secara default */
+    text-align: center;
+}
+
+.caption.active {
+    display: block; /* Tampilkan teks caption yang aktif */
+}
+
 /* Logo and Navigation Menu */
 .nav {
     display: flex;
@@ -180,6 +189,27 @@ nav ul li a {
     width: 500px;
     padding: 20px;
     text-align: center;
+}
+
+.slide {
+    display: none; /* Sembunyikan semua slide secara default */
+    transition: opacity 1s; /* Efek transisi saat slide berubah */
+}
+
+.slide.active {
+    display: block; /* Tampilkan slide yang aktif */
+}
+
+.slideshow {
+    position: relative; /* Pertahankan posisi relatif untuk kontainer */
+    overflow: hidden; /* Jaga agar slide tidak keluar dari kontainer */
+    width: 500px;
+    margin: 50px auto;
+    
+}
+
+.slide img {
+    width: 100%; /* Atur lebar gambar agar sesuai dengan kontainer */
 }
 
 /* Blog Section */
